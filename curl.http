@@ -1,0 +1,7 @@
+GET http://localhost:8888/licensing-service/default
+
+###
+GET http://localhost:8888/licensing-service/dev
+
+###
+GET http://localhost:8888/licensing-service/prod
