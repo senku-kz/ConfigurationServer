@@ -41,7 +41,12 @@ spring:
         config:
             server:
                 native:
-                    searchLocations: classpath:profiles-yml
+                    searchLocations: file://${HOME}/profiles-yml
+#                    searchLocations: classpath:profiles-yml
 #              searchLocations: file://<chapter 3>/confsvr/src/main/resources/config/licensingservice,
 #                               file://<chapter 3>confsvr/src/main/resources/config/organizationservice
 ###              #searchLocations: classpath:config/,classpath:config/licensingservice
+
+encrypt:
+    key: secretkey
+# spring.datasource.password = "{cipher}84044ff8c600e464f41159873355aad17241074884b7576e310adc592803e049"
