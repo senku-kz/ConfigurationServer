@@ -13,7 +13,7 @@ RUN useradd -m springuser
 
 # Set the working directory and copy the application JAR
 WORKDIR /app
-COPY --from=build /app/target/configurationserver-0.0.1-SNAPSHOT.jar app.jar
+COPY --from=build /app/target/*-SNAPSHOT.jar app.jar
 
 # Set permissions
 RUN chown -R springuser:springuser /app

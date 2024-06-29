@@ -12,7 +12,7 @@ services:
     environment:
       - JAVA_OPTS=-Xms64m -Xmx256m
     volumes:
-      - $HOME/profiles-yml:/app/src/main/resources/profiles-yml
+      - $HOME/profiles-yml:/home/springuser/profiles-yml
 
 #docker save -o config-service-app-1.0.0.tar config-service-app:1.0.0
 #docker load -i config-service-app-1.0.0.tar
