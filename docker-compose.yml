@@ -1,18 +1,25 @@
 version: '3.8'
 
 services:
-  config_srv:
-    build:
-      context: .
-      dockerfile: Dockerfile
-    image: config-service-app:1.0.1
-    container_name: config-service-container
-    ports:
-      - "8888:8888"
-    environment:
-      - JAVA_OPTS=-Xms64m -Xmx256m
-    volumes:
-      - $HOME/profiles-yml:/home/springuser/profiles-yml
+    config_srv:
+        build:
+            context: .
+            dockerfile: Dockerfile
+        image: config-service-app:1.0.1
+        container_name: config-service-container
+        ports:
+            - "8888:8888"
+        networks:
+            - project_network
+        environment:
+            - JAVA_OPTS=-Xms64m -Xmx256m
+        volumes:
+            - $HOME/profiles-yml:/home/springuser/profiles-yml
+
+networks:
+    project_network:
+        name: project_network
+        external: true
 
 #docker save -o config-service-app-1.0.0.tar config-service-app:1.0.0
 #docker load -i config-service-app-1.0.0.tar
