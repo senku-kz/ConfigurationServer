@@ -1,5 +1,3 @@
-#spring.application.name=config-service
-
 #
 #   This is the core configuration for a configuration service.  I have two examples here:
 #
@@ -41,11 +39,8 @@ spring:
         config:
             server:
                 native:
-                    searchLocations: file://${HOME}/profiles-yml
-#                    searchLocations: classpath:profiles-yml
-#              searchLocations: file://<chapter 3>/confsvr/src/main/resources/config/licensingservice,
-#                               file://<chapter 3>confsvr/src/main/resources/config/organizationservice
-###              #searchLocations: classpath:config/,classpath:config/licensingservice
+                    searchLocations: file://${HOME}/properties-yml
+#                    searchLocations: classpath:properties-yml
 
 #encrypt:
 #    key: secretkey

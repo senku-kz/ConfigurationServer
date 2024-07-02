@@ -15,7 +15,7 @@ services:
         environment:
             - JAVA_OPTS=-Xms64m -Xmx256m
         volumes:
-            - $HOME/profiles-yml:/home/springuser/profiles-yml
+            - $HOME/properties-yml:/home/springuser/properties-yml
 
 networks:
     project_network:
