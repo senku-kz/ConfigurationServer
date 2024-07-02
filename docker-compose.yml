@@ -18,8 +18,11 @@ services:
 
 networks:
     project_network:
-        name: project_network
         external: true
+
+# docker network list
+# docker network create project_network
+# docker network inspect project_network
 
 #docker save -o config-service-app-1.0.0.tar config-service-app:1.0.0
 #docker load -i config-service-app-1.0.0.tar
