@@ -41,7 +41,9 @@ spring:
                 native:
                     searchLocations: file://${HOME}/properties-yml
 #                    searchLocations: classpath:properties-yml
-
+        consul:
+            host: consul.local
+            port: 8500
 #encrypt:
 #    key: secretkey
 # spring.datasource.password = "{cipher}84044ff8c600e464f41159873355aad17241074884b7576e310adc592803e049"
