@@ -1,0 +1,11 @@
+GET http://localhost:8080/actuator
+
+###
+GET http://localhost:8080/actuator/gateway
+
+###
+GET http://localhost:8080/actuator/gateway/routes
+
+
+###
+POST http://localhost:8080/actuator/gateway/refresh
