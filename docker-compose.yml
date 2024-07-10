@@ -5,8 +5,8 @@ services:
         build:
             context: .
             dockerfile: Dockerfile
-        image: config-service-app:1.0.2
-        container_name: config-service-container
+        image: config-service:1.0.2
+        container_name: config-service
         restart: always
         ports:
             - "8888:8888"
