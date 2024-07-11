@@ -1,11 +1,9 @@
-GET http://localhost:8080/actuator
-
 ###
-GET http://localhost:8080/actuator/gateway
-
-###
-GET http://localhost:8080/actuator/gateway/routes
+GET http://localhost:8000/actuator
 
 
 ###
-POST http://localhost:8080/actuator/gateway/refresh
+GET http://localhost:8000/student-service/getStudentDetailsForSchool/abcschool
+
+###
+GET http://localhost:8000/school-service/getSchoolDetails/abcschool
