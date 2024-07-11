@@ -1,4 +1,4 @@
-# spring-config-service
+# gateway service
 
 https://habr.com/ru/companies/rosbank/articles/779770/
 
